@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 import {Yak} from "./Yak.jsx"
 
 class YakList extends React.Component{
-    connstructor(props){
+    constructor(props){
+        super(props)
         this.state = {
             postList:""
         };

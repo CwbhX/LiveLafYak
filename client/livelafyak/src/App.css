@@ -1,6 +1,22 @@
+/* body {background-color: #D0FAF3;} */
+body {background: #92E7EE;}
+
 .App {
   text-align: center;
   margin: 0 auto;
+}
+
+.button {
+    float: left;
+}
+
+.bar{
+    background-color: #5F9EC1;
+    text-align: center;
+}
+
+.titleBar{
+    margin: auto;
 }
 
 .YakCard {

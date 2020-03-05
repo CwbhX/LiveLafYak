@@ -11,9 +11,10 @@ import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 
 class Yak extends React.Component{
-    connstructor(props){
+    constructor(props){
+        super(props)
         this.state = {
-            text:"",
+            text:"Default State Text",
             upvotes:0,
             downvotes:0,
             timeStamp:""
@@ -32,14 +33,14 @@ class Yak extends React.Component{
                 <CardContent>
                     <Grid container spacing={1}>
                         <Grid item xs={11}>
-                            <p>Test text</p>
+                            <p>{this.state.text}</p>
                         </Grid>
                         <Grid item xs={1}>
                             <div className="YakButtons">
                                 <IconButton>
                                     <KeyboardArrowUpIcon/>
                                 </IconButton>
-                                <p>10</p>
+                                <p>{this.state.upvotes-this.state.downvotes}</p>
                                 <IconButton>
                                     <KeyboardArrowDownIcon/>
                                 </IconButton>
